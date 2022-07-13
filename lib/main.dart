@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'my_elevated_button_class.dart';
+import 'my_elevated_button.dart';
 
 void main() {
   runApp(const BallPage());
