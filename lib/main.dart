@@ -17,7 +17,7 @@ class BallPage extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const BallHomePage(
-        title: 'Magic 8 Ball Home Page',
+        title: 'Ask Me Anything [Home Page]',
       ),
     );
   }
@@ -33,6 +33,7 @@ class BallHomePage extends StatefulWidget {
 }
 
 class _BallHomePageState extends State<BallHomePage> {
+/*
   int _counter = 0;
 
   void _incrementCounter() {
@@ -40,34 +41,53 @@ class _BallHomePageState extends State<BallHomePage> {
       _counter++;
     });
   }
+*/
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue,
       appBar: AppBar(
+        backgroundColor: Colors.blue.shade900,
         title: Center(
-          child: Text(widget.title),
+          child: Text(
+            widget.title,
+            style: const TextStyle(color: Colors.white),
+          ),
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+      body: SafeArea(
+        child: Center(
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                child: Container(
+                  height: 200.0,
+                  margin: const EdgeInsets.symmetric(horizontal: 20.0),
+                  color: Colors.black,
+                ),
+              ),
+/*
+              Text(
+                'You have pushed the button this many times:',
+                style: TextStyle(color: Colors.white),
+              ),
+              Text(
+                'Sentence',
+                style: TextStyle(color: Colors.white, fontSize: 40.0),
+              ),
+*/
+            ],
+          ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
+/*
+        floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
+*/
     );
   }
 }
