@@ -46,12 +46,7 @@ class _BallHomePageState extends State<BallHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Center(
-          child: Text(
-            widget.title,
-            style: const TextStyle(
-              backgroundColor: Colors.teal,
-            ),
-          ),
+          child: Text(widget.title),
         ),
       ),
       body: Center(
