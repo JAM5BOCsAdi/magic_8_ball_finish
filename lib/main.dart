@@ -14,7 +14,7 @@ class BallPage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Magic 8 Ball',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.blue,
       ),
       home: const BallHomePage(
         title: 'Magic 8 Ball Home Page',
